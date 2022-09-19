@@ -780,6 +780,9 @@ padding-right: 15px;
 }
 
 .footer-modal-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     min-width: 200px;
     height: 50px;
    
@@ -801,7 +804,10 @@ padding-right: 15px;
 
 .footer-form-input {
     position: relative;
-    
+}
+
+.footer-icon {
+    margin-left: 10px;
 }
 
 .footer-icon::after .footer-form-input {
