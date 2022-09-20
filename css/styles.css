@@ -691,6 +691,7 @@ padding-right: 15px;
 
 .work-name{
     font-size: 18px;
+    font-weight: 700;
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
@@ -745,8 +746,9 @@ padding-right: 15px;
     margin-left: auto;
 }
 
-.footer-form-lable {
+.footer-lable {
     display: flex;
+   
 }
 
 .footer-sing {
@@ -756,7 +758,7 @@ padding-right: 15px;
 
 .footer-form-descr {
     font-size: 14px;
-    font-style: 700;
+    font-weight: 700;
 
     padding-bottom: 20px;
 
@@ -783,6 +785,7 @@ padding-right: 15px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     min-width: 200px;
     height: 50px;
    
@@ -802,24 +805,23 @@ padding-right: 15px;
     transition: var(--transition-dur-and-func);
 }
 
-.footer-form-input {
-    position: relative;
+.footer-modal-btn:hover,
+.footer-modal-btn:focus {
+    color: var(--primary-text-color-them-dark);
+    background: var(--background-open-model-btn);
 }
 
 .footer-icon {
     margin-left: 10px;
 }
 
-.footer-icon::after .footer-form-input {
+
+
+.footer-icon::after {
+    content: "";
+    display: block;
     position: absolute;
-    top: 50%;
-    left: 10px;
-
-    transform: translateY(-50%);
 }
-
-
-
 
  /*=======BACKDROP=======*/
 
@@ -878,7 +880,7 @@ padding-right: 15px;
  .modal-form-title {
     font-family: var(--primary-font);
     font-size: 20px;
-    font-style: 700;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 12px;
  }
@@ -900,13 +902,17 @@ padding-right: 15px;
 .modal-form-field-desc {
     display: block;
     font-size: 12px;
-    font-style: 400;
+    font-weight: 400;
     color: #757575;
     margin-bottom: 4px;
 }
 
 .modal-form-field {
     margin-bottom: 10px;
+}
+
+.modal-form-comment {
+    margin-bottom: 20px;
 }
 
 .modal-form-input-icon{
@@ -979,10 +985,22 @@ padding-right: 15px;
     appearance: none;
 }
 
+.modal-close-icon:hover,
+.modal-close-icon:focus {
+    fill: #2196F3;
+}
+
 .model-form-check-field {
+    font-weight: 400;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
+    color: rgba(117, 117, 117, 1) ;
+}
+
+.modal-form-contract {
+    color: rgba(33, 150, 243, 1);
 }
 
 .modal-form-submit {
